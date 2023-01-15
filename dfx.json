@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "first_project3_backend": {
+      "main": "src/first_project3_backend/main.mo",
+      "type": "motoko"
+    },
+    "first_project3_frontend": {
+      "dependencies": [
+        "first_project3_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/first_project3_frontend/src/index.html"
+      },
+      "source": [
+        "src/first_project3_frontend/assets",
+        "dist/first_project3_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
